@@ -21,11 +21,11 @@ Uso del programa:
 
 Diagrama del arbol considerando el siguiente caso:
 
-X | O | ▢
----+---+---
-▢ | X | ▢  
----+---+---
-▢ |▢ | ▢  
+X | O | 
+----------
+  | X |   
+----------
+  |   |   
 
 Raíz (Turno O)
 1. Movimiento (O en [0, 2])
