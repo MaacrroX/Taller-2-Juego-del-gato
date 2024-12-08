@@ -21,22 +21,24 @@ Uso del programa:
 
 Diagrama del arbol considerando el siguiente caso:
 
- X | O |  
- ---+---+---
-   | X |  
- ---+---+---
-   |   |  
+X | O | ▢
+---+---+---
+▢ | X | ▢  
+---+---+---
+▢ |▢ | ▢  
 
 Raíz (Turno O)
-├── Movimiento (O en [0, 2])
-│   ├── X gana (Valor = +10)
-│   └── ...
-├── Movimiento (O en [1, 2])
-│   ├── Empate (Valor = 0)
-│   └── ...
-└── Movimiento (O en [2, 2])
-    ├── X gana (Valor = +10)
-    └── ...
+1. Movimiento (O en [0, 2])
+   X gana (Valor = +10)
+   ...
+
+2. Movimiento (O en [1, 2])
+   Empate (Valor = 0)
+   ...
+
+3. Movimiento (O en [2, 2])
+   X gana (Valor = +10)
+   ...
 
 El algoritmo decidirá el movimiento que minimice la pérdida para "O".
 
