@@ -1,3 +1,5 @@
+Nombre: Mauro Ignacio Lainez Marin / Rut: 21.540.696-2 / Correo: mauro.lainez@alumnos.ucn.cl / Paralelo: C2
+
 Minimax es un algoritmo de búsqueda utilizado para juegos de dos jugadores de suma cero y con información perfecta, como el juego del gato. El objetivo es que un jugador (el maximizador) elija el movimiento que maximice su ganancia, mientras que el otro jugador (el minimizador) busca minimizar esa ganancia.
 
 Funcionamiento del algoritmo:
@@ -29,20 +31,21 @@ Diagrama del arbol considerando el siguiente caso:
 
 Raíz (Turno O)
 1. Movimiento (O en [0, 2])
-   X gana (Valor = +10)
-   ...
+     Respuesta: X en [1,0]
+        Evaluación: +10 (X gana)
+   
+     Respuesta: X en [2, 0]
+        Evaluación: Empate (0)
 
-2. Movimiento (O en [1, 2])
-   Empate (Valor = 0)
-   ...
+3. Movimiento (O en [1, 0])
+     Respuesta: X en [2, 0]
+        Evaluación: +10 (X gana)
 
-3. Movimiento (O en [2, 2])
-   X gana (Valor = +10)
-   ...
+5. Movimiento (O en [1, 2])
+     Respuesta: X en [2, 1]
+        Evaluación: Empate (0)
 
 El algoritmo decidirá el movimiento que minimice la pérdida para "O".
-
-
 
 Analisis de Complejidad
 
